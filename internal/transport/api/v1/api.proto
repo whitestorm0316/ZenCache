@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package api.v1;
+
+option go_package = "zencache/internal/transport/api/v1";
+
+// StoreRequest 存储键值对的请求
+message StoreRequest {
+  string group = 1;
+  string key = 2;
+  bytes value = 3;
+}
+
+// GetRequest 获取键值的请求
+message GetRequest {
+  string group = 1;
+  string key = 2;
+}
+
+// DeleteRequest 删除键值的请求
+message DeleteRequest {
+  string group = 1;
+  string key = 2;
+}
+
+// Response 统一的响应结构
+message Response {
+  int32 code = 1;
+  string message = 2;
+  bytes data = 3;
+}
