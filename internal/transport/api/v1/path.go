@@ -1,7 +1,7 @@
 package v1
 
 const (
-	STORE_KEY  = "v1/STORE_KEY"
-	GET_KEY    = "v1/GET_KEY"
-	DELETE_KEY = "v1/DELETE_KEY"
+	STORE_KEY  = "/v1/store_key"
+	GET_KEY    = "/v1/get_key"
+	DELETE_KEY = "/v1/delete_key"
 )
